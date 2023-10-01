@@ -36,5 +36,4 @@ for i in range(number[0], number[1] + 1):
         natural_number.append(a)
     a += 1
 
-for i in range(len(natural_number)):
-    print(natural_number[i], end=' ')
+print(*natural_number)
