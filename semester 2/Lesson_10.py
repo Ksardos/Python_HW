@@ -1,30 +1,30 @@
 # -*- coding: cp1251 -*-
 
-# Задание 1
+# Р—Р°РґР°РЅРёРµ 1
 pets = {}
 
-nickname = input("Введите имя питомца:")
-kind = input("Введите вид питомца:")
-name = input("Введите имя хозяина:")
-age = int(input("Введите возраст питомца:"))
-pets.update({nickname: {'Вид питомца': kind, 'Возраст питомца': age, 'Имя владельца': name}})
+nickname = input("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРёС‚РѕРјС†Р°:")
+kind = input("Р’РІРµРґРёС‚Рµ РІРёРґ РїРёС‚РѕРјС†Р°:")
+name = input("Р’РІРµРґРёС‚Рµ РёРјСЏ С…РѕР·СЏРёРЅР°:")
+age = int(input("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°:"))
+pets.update({nickname: {'Р’РёРґ РїРёС‚РѕРјС†Р°': kind, 'Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°': age, 'РРјСЏ РІР»Р°РґРµР»СЊС†Р°': name}})
 
 year_case = ''
-if pets[nickname]['Возраст питомца'] % 10 == 1 and pets[nickname]['Возраст питомца'] != 11:
-    if pets[nickname]['Возраст питомца'] % 100 != 11:
-        year_case = 'год'
-    elif 1 < pets[nickname]['Возраст питомца'] % 10 <= 4 and pets[nickname]['Возраст питомца'] != 12 and pets[nickname]['Возраст питомца'] != 13 and pets[nickname]['Возраст питомца'] != 14:
-        year_case = 'года'
+if pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] % 10 == 1 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 11:
+    if pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] % 100 != 11:
+        year_case = 'РіРѕРґ'
+    elif 1 < pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] % 10 <= 4 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 12 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 13 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 14:
+        year_case = 'РіРѕРґР°'
     else:
-        year_case = 'лет'
-elif 1 < pets[nickname]['Возраст питомца'] % 10 <= 4 and pets[nickname]['Возраст питомца'] != 12 and pets[nickname]['Возраст питомца'] != 13 and pets[nickname]['Возраст питомца'] != 14:
-    year_case = 'года'
+        year_case = 'Р»РµС‚'
+elif 1 < pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] % 10 <= 4 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 12 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 13 and pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'] != 14:
+    year_case = 'РіРѕРґР°'
 else:
-    year_case = 'лет'
+    year_case = 'Р»РµС‚'
 
-print('Это %s по кличке "%s". Возраст питомца: %a %s. Имя владельца: %s.' % (pets[nickname]['Вид питомца'], nickname, pets[nickname]['Возраст питомца'], year_case, pets[nickname] ['Имя владельца']))
+print('Р­С‚Рѕ %s РїРѕ РєР»РёС‡РєРµ "%s". Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°: %a %s. РРјСЏ РІР»Р°РґРµР»СЊС†Р°: %s.' % (pets[nickname]['Р’РёРґ РїРёС‚РѕРјС†Р°'], nickname, pets[nickname]['Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°'], year_case, pets[nickname] ['РРјСЏ РІР»Р°РґРµР»СЊС†Р°']))
 
-# Задание 2
+# Р—Р°РґР°РЅРёРµ 2
 
 my_dict = {}
 
