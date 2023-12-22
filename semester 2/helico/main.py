@@ -1,4 +1,4 @@
-# 🌲 🌊 🚁 🟩 🔥 🏥 💛 🪣 🏦 ☁ ⚡ 🏆⬛
+# 🌲 🌊 🚁 🟩 🔥 🏥 💛 🧯 🏦 ☁ ⚡ 🏆⬛
 from map import Map
 from clouds import Clouds
 from helicopter import Helicopter as Helico
