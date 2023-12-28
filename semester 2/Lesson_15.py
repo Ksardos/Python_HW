@@ -24,9 +24,6 @@ class Autobus(Transport):
     def __init__(self, name, max_speed, mileage):
         super().__init__(name, max_speed, mileage)
 
-    def __str__(self):
-        return "Марка: " + self.name + " Макс. скорость: " + str(self.max_speed) + " Пробег: " + str(
-            self.mileage) + " Вместимость: " + str(self.capacity)
 
     def seating_capacity(self, capacity=50):
         return f"Вместимость одного автобуса {self.name} {capacity} пассажиров"
