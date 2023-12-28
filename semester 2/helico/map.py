@@ -12,7 +12,7 @@ CELL_TYPES = "🟩🌳🌊🏥🏦🔥"
 TREE_BONUS = 100
 UPGRADE_COST = 100
 LIFE_COST = 100
-
+BURNED_DOWN_COST = 10
 
 class Map:
     def __init__(self, w, h):
@@ -93,12 +93,15 @@ class Map:
         if self.cells[cx][cy] == 1:
             self.cells[cx][cy] = 5
 
-    def update_fires(self):
+    def update_fires(self, helico):
         for ri in range(self.h):
             for ci in range(self.w):
                 cell = self.cells[ri][ci]
                 if cell == 5:
                     self.cells[ri][ci] = 0
+                    helico.score -= BURNED_DOWN_COST
+                    if helico.score == 0:
+                        game_over(helico.score)
         for i in range(5):
             self.add_fire()
 
