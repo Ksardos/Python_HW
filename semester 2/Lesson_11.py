@@ -9,7 +9,9 @@ def factorial(n):
         return n * factorial(n - 1)
 
 
-result = [x for x in [factorial(y) for y in range(6, 0, -1)]]
+numb = int(input("Введите натуральное число:"))
+fl = factorial(numb)
+result = [x for x in [factorial(y) for y in range(fl, 0, -1)]]
 print(result[:10])
 
 
